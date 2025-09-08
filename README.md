@@ -1,2 +1,7 @@
-# goph419-f2025-lab00-stAK
-GOPH 419 Lab 0
+# GOPH 419 - Computational Methods for Geophysicists
+
+*Semester:* F2025
+*Instructor:* B. Karchewski
+*Author:* Ava Keerak
+
+An example rpository setup for a simple Python package.
