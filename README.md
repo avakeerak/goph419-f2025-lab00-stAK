@@ -4,4 +4,4 @@
 *Instructor:* B. Karchewski
 *Author:* Ava Keerak
 
-An example rpository setup for a simple Python package.
+An example repository setup for a simple Python package.
