@@ -18,11 +18,8 @@ def main():
     print(f'add(A, B):\n{add(A, B)}')
     print(f'multiply(A, B):\n{multiply(A, B)}')
 
-if __name__ == '__main__':
-    main()
-
 def polygon_unc():
-    # multiply the perimeter by the spatial resolution to get the standard uncertainty
+    # multiply the perimeter of the polygon by the spatial resolution to get the standard uncertainty
     print(f'the standard uncertainty is {multiply(322, 25)}')
     ux = multiply(322,25)
 
@@ -34,3 +31,7 @@ def polygon_unc():
 
     # multiple the correction factor by the standard uncertainty
     print(f'the standard uncertainty with the correction factor applied is {multiply(cf, ux)}')
+
+if __name__ == '__main__':
+    main()
+    polygon_unc()
