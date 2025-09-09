@@ -2,6 +2,8 @@ import numpy as np
 from my_python_package.operators import (
     add,
     multiply,
+    divide,
+    exp
 )
 
 def main():
@@ -18,3 +20,17 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+def polygon_unc():
+    # multiply the perimeter by the spatial resolution to get the standard uncertainty
+    print(f'the standard uncertainty is {multiply(322, 25)}')
+    ux = multiply(322,25)
+
+    # divide the random pixel error (up to 1 pixel in this case) by 2 to get the exponent for the correction factor.
+    e = divide(1, 2)
+
+    # calculate the correction factor by raising the number of vertices in the polygon to the power of the previously calculated expponent
+    cf = exp(37, e)
+
+    # multiple the correction factor by the standard uncertainty
+    print(f'the standard uncertainty with the correction factor applied is {multiply(cf, ux)}')
