@@ -20,4 +20,4 @@ classifiers = [
 "License :: OSI Approved :: GNU General Public License v3",
 ]
 [project.urls]
-"Homepage" = "https://github.com/avakeerak/goph-419-f2025-lab00-stAK"
+"Homepage" = "https://github.com/avakeerak/goph-419-f2025-lab00-stAK" 
