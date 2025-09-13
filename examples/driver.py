@@ -19,17 +19,17 @@ def main():
     print(f'multiply(A, B):\n{multiply(A, B)}')
 
 def polygon_unc():
-    # multiply the perimeter of the polygon by the spatial resolution to get the standard uncertainty
+    # multiply the perimeter of the polygon by the spatial resolution to get the standard uncertainty (Haritashya et al., 2018)
     print(f'the standard uncertainty is {multiply(322, 25)}')
     ux = multiply(322,25)
 
     # divide the random pixel error (up to 1 pixel in this case) by 2 to get the exponent for the correction factor.
     e = divide(1, 2)
 
-    # calculate the correction factor by raising the number of vertices in the polygon to the power of the previously calculated expponent
+    # calculate the correction factor by raising the number of vertices in the polygon to the power of the previously calculated expponent (Krumweide et al., 2014)
     cf = exp(37, e)
 
-    # multiple the correction factor by the standard uncertainty
+    # multiple the correction factor by the standard uncertainty (Joint Committee for Guides in Metrology, 2008)
     print(f'the standard uncertainty with the correction factor applied is {multiply(cf, ux)}')
 
 if __name__ == '__main__':
